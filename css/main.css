@@ -1,0 +1,95 @@
+body {
+	background-color: #e6e6e9;
+	font-family: Segoe UI;
+}
+
+header {
+	background-color: white;
+	box-shadow: 0px 1px 5px grey;
+	padding: 1em 1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0079d3;
+}
+
+#logo {
+	width: 5%;
+	height: 5%;
+}
+
+nav {
+	margin-top: .5em;
+}
+
+nav > a {
+	padding-right: .8em;
+
+}
+
+label > input {
+	display: block;
+}
+
+#filters {
+	margin: 1em;
+}
+
+fieldset {
+	width: 20em;
+	box-sizing: border-box;
+	border: none;
+	background-color: #f3c11a;
+	box-shadow: 0px 1px 5px grey;
+}
+
+fieldset > h2 {
+	color: #003082;
+}
+
+legend {
+	display: none;
+}
+
+.cta {
+	background-color: #0079d3;
+	color: white;
+	font-family: Segoe UI;
+	font-size: 1em;
+	border: none;
+	padding: .3em;
+	margin-top: .5em;
+	box-shadow: 0px 2px 1px #003082;
+}
+
+.caroussel {
+	background-color: #efc11f;
+	padding: 1em;
+	margin: 1em;
+	width: 20em;
+	box-sizing: border-box;
+	box-shadow: 0px 1px 5px grey;
+}
+
+.caroussel > img, .verhaal > img {
+	width: calc(100% + 2em);
+	margin: 0 -1em;
+}
+
+.caroussel > h1, .verhaal > h1 {
+	color: #003082;
+	margin-top: -.1em;
+}
+
+.verhaal {
+	background-color: white;
+	margin: 1em;
+	padding: 1em;
+	width: 20em;
+	box-sizing: border-box;
+	box-shadow: 0px 1px 5px grey;
+}
