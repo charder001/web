@@ -37,6 +37,8 @@ label > input {
 
 #filters {
 	margin: 1em;
+	display: flex;
+	flex-direction: column;
 }
 
 fieldset {
@@ -64,9 +66,18 @@ legend {
 	padding: .3em;
 	margin-top: .5em;
 	box-shadow: 0px 2px 1px #003082;
+
 }
 
 .caroussel {
+	display: flex;
+}
+
+.verhaal {
+	display: flex;
+}
+
+.caroussel article {
 	background-color: #efc11f;
 	padding: 1em;
 	margin: 1em;
@@ -75,7 +86,16 @@ legend {
 	box-shadow: 0px 1px 5px grey;
 }
 
-.caroussel > img, .verhaal > img {
+.verhaal article {
+	background-color: white;
+	margin: 1em;
+	padding: 1em;
+	width: 20em;
+	box-sizing: border-box;
+	box-shadow: 0px 1px 5px grey;
+}
+
+article > img  {
 	width: calc(100% + 2em);
 	margin: 0 -1em;
 }
@@ -85,11 +105,8 @@ legend {
 	margin-top: -.1em;
 }
 
-.verhaal {
-	background-color: white;
-	margin: 1em;
-	padding: 1em;
-	width: 20em;
-	box-sizing: border-box;
-	box-shadow: 0px 1px 5px grey;
+@media (min-width:30em) {
+	body {
+
+	}
 }
