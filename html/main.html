@@ -11,100 +11,142 @@
 	<body>
 		<header>
 			<a href="main.html">
-				<img src="nslogo.jpg" id="logo" alt="homepage">
+				<img src="nslogo.jpg" alt="homepage">
 			</a>
-			<form id="zoeken" action ="zoekresultaten.html">
-				<label>zoeken <!--Weet helaas nog niet hoe ik een label weg kan stylen !-->
-				<input type="search" placeholder="zoek een verhaal">
-			</label>
-			<button class="cta">Zoeken</button>
-		</form>
-		<nav>
-			<a href="">Home</a>
-			<a href="">Favorieten</a>
-			<a href="login.html">Login</a>
-			<a href="">Account</a>
-		</nav>
-	</header>
-	
-	<section class="caroussel">
-		<article>
-			<h1>Verhaal</h1>
-			<img src="verhaal.jpg">
-			<p>Dit gerecht is vrij eenvoudig te maken. Ideaal op een doordeweekse dag als je even niet weet wat je met het leven aan moet. Als je wel weet wat je met het... </p>
-			<a href="">Lees verder</a>
-		</article>
+			<nav>
+				<ul>
+					
+					<li><a href="login.html">Login</a></li>
+					<li><a href="favorieten.html">
+						<img src="../img/account.png" alt="Favorieten">
+					</a></li>
+				</ul>
+			</nav>
+		</header>
 		
-		<article>
-			<h1>Verhaal</h1>
-			<img src="verhaal.jpg">
-			<p>Kijk... daaro dan... aan de overkant... wat daar uit dat bussie komp stappe? Zie je da, da
-			ongewasse baardkonijn achter da gifgroene babykarretje? Max Molovich... </p>
-			<a href="">Lees verder</a>
-		</article>
-	</section>
-	
-	
-	<form id="filters">
-		<h1>Filteropties</h1>
-		<fieldset>
-			<legend>Thema</legend>
-			<h2>Filteren</h2>
-			<label>
-				<input type="checkbox"> Boos
-			</label>
-			<label>
-				<input type="checkbox"> Boos
-			</label>
-			<label>
-				<input type="checkbox"> Boos
-			</label>
-		</fieldset>
-		
-		<fieldset>
-			<legend>Sorteren</legend>
-			<h2>Sorteren</h2>
-			<label>
-				<input type="radio" name="sorteren">populariteit
-			</label>
-			<label>
-				<input type="range" name="sorteren">leestijd
-			</label>
-			<label>
-				<input type="radio" name="sorteren">reacties
-			</label>
-			<label>
-				<input type="radio" name="sorteren">aantal
-			</label>
-			<button class="cta">Filter</button>
-		</fieldset>
-	
-	</form>
-	<section class="verhaal">
-		<article>
-		<h1>Verhaal</h1>
-		<img src="verhaal.jpg">
-		<p>Ach en wee, ik stap de bus uit. Mijn zoon – in wat voor wereld heb ik die jongen neergezet
-– ligt vredig in zijn wagentje te slapen, vrij van kwade gedachten.... </p>
-		<a href="">Lees verder</a>
-	</article>
-
-	<article>
-		<h1>Verhaal</h1>
-		<img src="verhaal.jpg">
-		<p>Uh, uh, dit is Lange Frans, uh, uh
-Daar gaan we dan... Drop die beat.
-(De beat wordt gedropt, Lange Frans gaat er vol in:)
-Het is dinsdagochtend, zoveel februari... </p>
-		<a href="">Lees verder</a></article>
-
-	<article>
-		<h1>Verhaal</h1>
-		<img src="verhaal.jpg">
-		<p>1. En het was in de dagen van Farao Rutte dat de HEER der heerscharen tot Max had
-		gesproken en hem verzocht had op zoek te gaan... </p>
-		<a href="">Lees verder</a>
-	</article>
-	</section>
-</body>
-</html>
+		<div id="headerimg" alt="header">
+			<h1>Lees nu NS-Reisverhalen voor onderweg!</h1>
+		</div>
+		<main>
+			<form id="filters">
+				<fieldset>
+					<legend>Thema</legend>
+					<h2>Filters</h2>
+					<label>
+						<input type="checkbox"> Boos
+					</label>
+					<label>
+						<input type="checkbox"> Boos
+					</label>
+					<label>
+						<input type="checkbox"> Boos
+					</label>
+					<button class="cta">Filter</button>
+					<select>
+						<option>Sorteer op</option>
+						<option>Populariteit</option>
+						<option>Lengte</option>
+						<option>Nieuwe addities</option>
+					</select>
+				</fieldset>
+				
+			</form>
+			<section class="verhaal">
+				<article>
+					<h1>Verhaal</h1>
+					<img src="verhaal.jpg">
+					<a href="">Lees verder</a>
+					<div class="donefav">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+							<path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+								c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+								c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+							</svg>
+						</div>
+						<div class="fav">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+								<path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+									c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+									c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+								</svg>
+							</div>
+						</article>
+						<article>
+							<h1>Verhaal</h1>
+							<img src="verhaal.jpg">
+							<a href="">Lees verder</a>
+							<div class="fav">
+								<?xml version="1.0" encoding="iso-8859-1"?>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+									<path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+										c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+										c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+									</svg>
+								</div>
+							</article>
+							<article>
+								<h1>Verhaal</h1>
+								<img src="verhaal.jpg">
+								<a href="">Lees verder</a>
+								<div class="fav">
+									<?xml version="1.0" encoding="iso-8859-1"?>
+									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+										<path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+											c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+											c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+										</svg>
+									</div>
+								</article>
+								<article>
+									<h1>Verhaal</h1>
+									<img src="verhaal.jpg">
+									<a href="">Lees verder</a>
+									<div class="fav">
+										<?xml version="1.0" encoding="iso-8859-1"?>
+										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+											<path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+												c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+												c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+											</svg>
+										</div>
+									</article>
+									<article>
+										<h1>Verhaal</h1>
+										<img src="verhaal.jpg">
+										<a href="">Lees verder</a>
+										<div class="fav">
+											<?xml version="1.0" encoding="iso-8859-1"?>
+											<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+												<path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+													c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+													c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+												</svg>
+											</div>
+										</article>
+										<article>
+											<h1>Verhaal</h1>
+											<img src="verhaal.jpg">
+											<a href="">Lees verder</a>
+											<div class="fav">
+												<?xml version="1.0" encoding="iso-8859-1"?>
+												<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+													<path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+														c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+														c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+													</svg>
+												</div>
+											</article>
+										</section>
+									</main>
+									<script type="text/javascript" src="../js/main.js"></script>
+								</body>
+							</html>

@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-	<meta charset="UTF-8">
-	<title>Login</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Log in - NS Verhalen</title>
+		<link rel="stylesheet" type="text/css" href="../css/login.css">
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	</head>
 <body>
+	<header>
+					<a href="main.html">
+					<img src="nslogo.jpg" id="logo" alt="homepage">
+				</a>
+			</header>
 	<form action="main.html">
 		<fieldset>
 			<legend>Inloggen</legend>
-			<label> Gebruikersnaam: <input type="text"> </label>
-			<label> Wachtwoord: <input type="password"> </label>
-			<button>Inloggen</button>
+			<label> Gebruikersnaam: <input required type="text"> </label>
+			<label> Wachtwoord: <input required type="password"> </label>
+			<button class="cta">Inloggen</button>
 			<a href="">Wachtwoord vergeten? </a>
+			<a href="signup.html">Nog geen account?</a>
 		</fieldset>
 
-		<fieldset>
-			<legend>Maak een gratis account aan</legend>
-			<label>E-mailadres: <input type="email"></label>
-			<label>Gebruikersnaam: <input type="text"></label>
-			<label>Wachtwoord <input type="password"></label>
-			<a href="main.html">Maak een account aan</a> 
-		</fieldset>
+
 	</form>
 </body>
 </html>
